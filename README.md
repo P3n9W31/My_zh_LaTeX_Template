@@ -15,13 +15,13 @@
 
 无法直接用XeLaTeX一次编译通过的，将在具体的模板文件中慢慢补上说明。
 
-##测试环境
+## 测试环境
 * macOS High Sierra 10.13.6
 * MacTeX-2018
 * Sublime text 3
 * LaTeXTools —— A LaTeX Plugin for Sublime text 3
 
-##构成
+## 构成
 仓库中搜集的模板分为了以下几类：
 
 * book（书籍模板）
