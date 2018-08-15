@@ -1,0 +1,101 @@
+\documentclass[%
+aps,
+prl,
+12pt, 
+twocolumn,
+preprint,
+reprint,
+amsmath,
+amssymb
+]{revtex4-1}
+
+\usepackage{graphicx}
+\usepackage{dcolumn}
+\usepackage{bm}
+\usepackage{natbib}
+\usepackage{zhlipsum}
+\usepackage{lipsum}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{ctex}
+\graphicspath{{./figures/}}
+%
+\begin{document}
+
+\title{\LaTeX~Note} 
+\author{作者一} 
+\affiliation{xx大学 xx学院} 
+\author{作者二} 
+\affiliation{yy大学 yy学院} 
+
+\begin{abstract}
+\zhlipsum[1]
+
+\end{abstract}
+
+%
+\maketitle %生成标题
+%
+\section{第一节}
+
+\zhlipsum[1]
+
+% 图片
+\begin{figure} [h]
+\includegraphics[width=6cm]{Fig1.png}
+\caption{This is a bear}
+\label{fig1}
+\end{figure}
+
+%%%%%
+\section{第二节}
+%%%%%%
+\zhlipsum[1]
+%%%%%%%
+\section{第三节}
+%%%%%%%%
+
+\begin{enumerate}
+\item 孤山寺北贾亭西，水面初平云脚低。
+\item 几处早莺争暖树，谁家新燕啄春泥。
+\item 乱花渐欲迷人眼，浅草才能没马蹄。
+\item 最爱湖东行不足，绿杨阴里白沙堤。 
+
+\end{enumerate}
+
+
+%%%%
+\section{第四节}
+%%%%
+
+\lipsum[1]
+
+% 公式
+\begin{align*}
+I(X;Y) = & h(X)-h(X|Y)\\
+= & \frac{1}{2}\log(2\pi e \sigma_x^2) - \frac{1}{2}\log(2\pi e \sigma_x^2(1-\rho^2))\\
+= & \frac{1}{2}\log(\frac{2\pi e}{1-\rho^2})
+\end{align*}
+
+表\ref{tab1}是随便写的一个表格。
+
+% 表格
+\begin{table}[h!]
+\caption{Sample table title}
+\label{tab1} 
+      \begin{tabular}{cccc}
+        \hline
+           & B1  &B2   & B3\\ \hline
+        A1 & 0.1 & 0.2 & 0.3\\
+        A2 & ... & ..  & .\\
+      \end{tabular}
+\end{table}
+
+
+%%%%%%%%%%%%
+\section{第五节}
+%%%%%%%%%%%%
+\lipsum[1]
+
+\end{document}
