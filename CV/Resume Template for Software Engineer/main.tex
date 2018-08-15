@@ -1,0 +1,200 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,roman]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% modern themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}
+\usepackage{fontawesome}
+\usepackage{fontspec}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+% if you are not using xelatex ou lualatex, replace by the encoding you are using
+% \usepackage{ctex}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+\usepackage{multicol}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+\usepackage{import}
+
+% personal data
+\name{FirstName}{LastName}
+% \title{Curriculum Vitae}                               % optional, remove / comment the line if not wanted
+\address{500 College Ave, Swarthmore, PA 19081 }{}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+% \phone[mobile]{909-839-3097}                   % optional, remove / comment the line if not wanted
+% \phone[fixed]{01234 123456}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+% \email{xpan1@swarthmore.edu}                               % optional, remove / comment the line if not wanted
+% \homepage{shawnpan.me}                         % optional, remove / comment the line if not wanted
+% \extrainfo{}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+  
+\newcommand*{\customcventry}[7][.25em]{
+  \begin{tabular}{@{}l} 
+    {\bfseries #4}
+  \end{tabular}
+  \hfill% move it to the right
+  \begin{tabular}{l@{}}
+     {\bfseries #5}
+  \end{tabular} \\
+  \begin{tabular}{@{}l} 
+    {\itshape #3}
+  \end{tabular}
+  \hfill% move it to the right
+  \begin{tabular}{l@{}}
+     {\itshape #2}
+  \end{tabular}
+  \ifx&#7&%
+  \else{\\%
+    \begin{minipage}{\maincolumnwidth}%
+      \small#7%
+    \end{minipage}}\fi%
+  \par\addvspace{#1}}
+
+\newcommand*{\customcvproject}[4][.25em]{
+%   \vfill\noindent
+  \begin{tabular}{@{}l} 
+    {\bfseries #2}
+  \end{tabular}
+  \hfill% move it to the right
+  \begin{tabular}{l@{}}
+     {\itshape #3}
+  \end{tabular}
+  \ifx&#4&%
+  \else{\\%
+    \begin{minipage}{\maincolumnwidth}%
+      \small#4%
+    \end{minipage}}\fi%
+  \par\addvspace{#1}}
+
+\setlength{\tabcolsep}{12pt}
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+\vspace*{-23mm}
+
+\begin{center}
+\begin{tabular}{ c c c c }
+ \faGlobe\enspace mysite.me & \faEnvelopeO\enspace xxxx@swarthmore.edu & \faGithub\enspace yourgithub & \faMobile\enspace 123-456-7891\\  
+\end{tabular}
+\end{center}
+
+\section{EDUCATION}
+{\customcventry{Expected Graduation: June 2018}{BA in Computer Science GPA: 1.0/4.0}{Swarthmore College}{Swarthmore, PA}{}{}}
+
+\section{EXPERIENCE}
+
+{\customcventry{Sept 2017 - Dec 2017}{Software Engineer Intern}{Amazing Company 1}{San Francisco, CA}{}
+{\begin{itemize}
+  \item Integrated calendar invitations into Mailbox, allowing RSVP responses without leaving the app
+\end{itemize}
+}
+
+{\customcventry{June 2017 – Aug 2017}{Software Engineer Intern}{Amazing Company 2}{San Francisco, CA}{}
+{\begin{itemize}
+  \item Analyzed the best implementation for the calendar system, researching relevant APIs and RFCs
+that would create a practical integration. Included extensive testing among existing providers
+  \item Worked full-stack across Mailbox systems, from the iOS app in Objective-C/C++11 to several backend systems in Node.js/CoffeeScript. Required quickly picking up different environments
+  \item Constructed a load testing framework in Scala using Gatling to generate dummy ad impression data for testing a MapReduce pipeline
+\end{itemize}
+}
+
+{\customcventry{Jan 2016 – June 2016}{Backend Engineer}{Amazing Company 3}{Remote}{}
+{\begin{itemize}
+  \item Developed an ETL pipeline to aggregate data from Hadoop HDFS using Apache Spark and Cloudera Impala, resulting in a \textasciitilde5x speed improvement over the existing Pig/Hive/Oozie pipeline
+  \item Reworked a reporting system to work on-demand using Amazon Redshift, resulting in a 1 hour decrease in total overnight ETL job duration
+  \item Migrated push notifications to AWS SNS, saving 98\% in push-related costs
+\end{itemize}
+}
+
+\section{PROJECTS}
+
+{\customcvproject{Amazing Project 1}{Aug 2017 - Present}
+  {\begin{itemize}
+    \item Ran custom Minecraft mods on CentOS and Debian servers
+    \item Reverse engineered obfuscated Java using a decompiler and reflection
+  \end{itemize}
+  }
+}
+
+{\customcvproject{Amazing Project 2}{Feb 2016 – May 2017}
+{\begin{itemize}
+  \item Began a group to create the first 36 hour student-run hackathon ever held at Illinois
+  \item Led 50 staff to raise \$175,000 for HackIllinois, managing relationships with 60+ sponsors
+  \item Plan events to increase social interaction among ACM members, as well as events to foster the spirit of computer science at Illinois
+\end{itemize}
+}
+
+{\customcvproject{Amazing Project 3}{Jan 2015 – May 2015}
+{\begin{itemize}
+  \item Assist in recruiting potential and admitted students to the UIUC computer science program
+  \item Attend information sessions, admitted student Q\&A’s, and student lunches to generate interest in the Illinois Computer Science department
+\end{itemize}
+}
+}
+
+\section{ADDITIONAL}
+\begin{minipage}{\maincolumnwidth}%
+	\small{
+    	\begin{itemize}
+          \item Relevant Coursework: Data Structures and Algorithms, Natural Language Processing, Computer Systems, Databases, Computer Security, Abstract Algebra
+          \item President of XYZ Club, Public Relations Manager of Swarthmore QWE Club
+          \item Programming Languages: Python, C, C++, PHP, Java, HTML/CSS, Javascript, jQuery, NodeJS
+          \item Fluent in Gibberish, conversational in Nonsense
+		\end{itemize}}%
+\end{minipage}%
+      
+}
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+%-----       letter       ---------------------------------------------------------
+
+\end{document}
+
+
+%% end of file `template.tex'.
