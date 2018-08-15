@@ -1,0 +1,209 @@
+\begin{thebibliography}{13}
+% BibTex style file: bmc-mathphys.bst (version 1.01), 2012-01-06
+\ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
+\ifx \binits  \undefined \def \binits#1{#1}\fi
+\ifx \bauthor  \undefined \def \bauthor#1{#1}\fi
+\ifx \batitle  \undefined \def \batitle#1{#1}\fi
+\ifx \bjtitle  \undefined \def \bjtitle#1{#1}\fi
+\ifx \bvolume  \undefined \def \bvolume#1{\textbf{#1}}\fi
+\ifx \byear  \undefined \def \byear#1{#1}\fi
+\ifx \bissue  \undefined \def \bissue#1{#1}\fi
+\ifx \bfpage  \undefined \def \bfpage#1{#1}\fi
+\ifx \blpage  \undefined \def \blpage #1{#1}\fi
+\ifx \burl  \undefined \def \burl#1{\textsf{#1}}\fi
+\ifx \doiurl  \undefined \def \doiurl#1{\textsf{#1}}\fi
+\ifx \betal  \undefined \def \betal{\textit{et al.}}\fi
+\ifx \binstitute  \undefined \def \binstitute#1{#1}\fi
+\ifx \binstitutionaled  \undefined \def \binstitutionaled#1{#1}\fi
+\ifx \bctitle  \undefined \def \bctitle#1{#1}\fi
+\ifx \beditor  \undefined \def \beditor#1{#1}\fi
+\ifx \bpublisher  \undefined \def \bpublisher#1{#1}\fi
+\ifx \bbtitle  \undefined \def \bbtitle#1{#1}\fi
+\ifx \bedition  \undefined \def \bedition#1{#1}\fi
+\ifx \bseriesno  \undefined \def \bseriesno#1{#1}\fi
+\ifx \blocation  \undefined \def \blocation#1{#1}\fi
+\ifx \bsertitle  \undefined \def \bsertitle#1{#1}\fi
+\ifx \bsnm \undefined \def \bsnm#1{#1}\fi
+\ifx \bsuffix \undefined \def \bsuffix#1{#1}\fi
+\ifx \bparticle \undefined \def \bparticle#1{#1}\fi
+\ifx \barticle \undefined \def \barticle#1{#1}\fi
+\ifx \bconfdate \undefined \def \bconfdate #1{#1}\fi
+\ifx \botherref \undefined \def \botherref #1{#1}\fi
+\ifx \url \undefined \def \url#1{\textsf{#1}}\fi
+\ifx \bchapter \undefined \def \bchapter#1{#1}\fi
+\ifx \bbook \undefined \def \bbook#1{#1}\fi
+\ifx \bcomment \undefined \def \bcomment#1{#1}\fi
+\ifx \oauthor \undefined \def \oauthor#1{#1}\fi
+\ifx \citeauthoryear \undefined \def \citeauthoryear#1{#1}\fi
+\ifx \endbibitem  \undefined \def \endbibitem {}\fi
+\ifx \bconflocation  \undefined \def \bconflocation#1{#1}\fi
+\ifx \arxivurl  \undefined \def \arxivurl#1{\textsf{#1}}\fi
+\csname PreBibitemsHook\endcsname
+
+%%% 1
+\bibitem{koon}
+\begin{barticle}
+\bauthor{\bsnm{Koonin}, \binits{E.V.}},
+\bauthor{\bsnm{Altschul}, \binits{S.F.}},
+\bauthor{\bsnm{Bork}, \binits{P.}}:
+\batitle{Brca1 protein products: functional motifs}.
+\bjtitle{Nat Genet}
+\bvolume{13},
+\bfpage{266}--\blpage{267}
+(\byear{1996})
+\end{barticle}
+\endbibitem
+
+%%% 2
+\bibitem{oreg}
+\begin{barticle}
+\bauthor{\bsnm{Orengo}, \binits{C.A.}},
+\bauthor{\bsnm{Bray}, \binits{J.E.}},
+\bauthor{\bsnm{Hubbard}, \binits{T.}},
+\bauthor{\bsnm{LoConte}, \binits{L.}},
+\bauthor{\bsnm{Sillitoe}, \binits{I.}}:
+\batitle{Analysis and assessment of ab initio three-dimensional prediction,
+  secondary structure, and contacts prediction}.
+\bjtitle{Proteins}
+\bvolume{Suppl 3},
+\bfpage{149}--\blpage{170}
+(\byear{1999})
+\end{barticle}
+\endbibitem
+
+%%% 3
+\bibitem{khar}
+\begin{botherref}
+\oauthor{\bsnm{Kharitonov}, \binits{S.A.}},
+\oauthor{\bsnm{Barnes}, \binits{P.J.}}:
+Clinical Aspects of Exhaled Nitric Oxide.
+in press
+\end{botherref}
+\endbibitem
+
+%%% 4
+\bibitem{zvai}
+\begin{barticle}
+\bauthor{\bsnm{Zvaifler}, \binits{N.J.}},
+\bauthor{\bsnm{Burger}, \binits{J.A.}},
+\bauthor{\bsnm{Marinova-Mutafchieva}, \binits{L.}},
+\bauthor{\bsnm{Taylor}, \binits{P.}},
+\bauthor{\bsnm{Maini}, \binits{R.N.}}:
+\batitle{Mesenchymal cells, stromal derived factor-1 and rheumatoid arthritis
+  [abstract]}.
+\bjtitle{Arthritis Rheum}
+\bvolume{42},
+\bfpage{250}
+(\byear{1999})
+\end{barticle}
+\endbibitem
+
+%%% 5
+\bibitem{xjon}
+\begin{bchapter}
+\bauthor{\bsnm{Jones}, \binits{X.}}:
+\bctitle{Zeolites and synthetic mechanisms}.
+In: \beditor{\bsnm{Smith}, \binits{Y.}} (ed.)
+\bbtitle{Proceedings of the First National Conference on Porous Sieves: 27-30
+  June 1996; Baltimore},
+pp. \bfpage{16}--\blpage{27}
+(\byear{1996}).
+\bcomment{Stoneham: Butterworth-Heinemann}
+\end{bchapter}
+\endbibitem
+
+%%% 6
+\bibitem{schn}
+\begin{bchapter}
+\bauthor{\bsnm{Schnepf}, \binits{E.}}:
+\bctitle{From prey via endosymbiont to plastids: comparative studies in
+  dinoflagellates}.
+In: \beditor{\bsnm{Lewin}, \binits{R.A.}} (ed.)
+\bbtitle{Origins of Plastids}
+vol. \bseriesno{2},
+\bedition{2nd} edn.,
+pp. \bfpage{53}--\blpage{76}.
+\bpublisher{Chapman and Hall},
+\blocation{New York}
+(\byear{1993})
+\end{bchapter}
+\endbibitem
+
+%%% 7
+\bibitem{pond}
+\begin{botherref}
+Innovative Oncology
+\end{botherref}
+\endbibitem
+
+%%% 8
+\bibitem{smith}
+\begin{bbook}
+\beditor{\bsnm{Smith}, \binits{Y.}} (ed.):
+\bbtitle{Proceedings of the First National Conference on Porous Sieves: 27-30
+  June 1996; Baltimore}.
+\bpublisher{Butterworth-Heinemann},
+\blocation{Stoneham}
+(\byear{1996})
+\end{bbook}
+\endbibitem
+
+%%% 9
+\bibitem{marg}
+\begin{bbook}
+\bauthor{\bsnm{Margulis}, \binits{L.}}:
+\bbtitle{Origin of Eukaryotic Cells}.
+\bpublisher{Yale University Press},
+\blocation{New Haven}
+(\byear{1970})
+\end{bbook}
+\endbibitem
+
+%%% 10
+\bibitem{hunn}
+\begin{bchapter}
+\bauthor{\bsnm{Hunninghake}, \binits{G.W.}},
+\bauthor{\bsnm{Gadek}, \binits{J.E.}}:
+\bctitle{The alveloar macrophage}.
+In: \beditor{\bsnm{Harris}, \binits{T.J.R.}} (ed.)
+\bbtitle{Cultured Human Cells and Tissues},
+pp. \bfpage{54}--\blpage{56}.
+\bpublisher{Academic Press},
+\blocation{New York}
+(\byear{1995}).
+\bcomment{Stoner G (Series Editor): Methods and Perspectives in Cell Biology,
+  vol 1}
+\end{bchapter}
+\endbibitem
+
+%%% 11
+\bibitem{advi}
+\begin{botherref}
+Advisory Committee on Genetic Modification:
+Annual Report.
+London
+(1999).
+Advisory Committee on Genetic Modification
+\end{botherref}
+\endbibitem
+
+%%% 12
+\bibitem{koha}
+\begin{botherref}
+\oauthor{\bsnm{Kohavi}, \binits{R.}}:
+Wrappers for performance enhancement and obvious decision graphs.
+PhD thesis,
+Stanford University, Computer Science Department
+(1995)
+\end{botherref}
+\endbibitem
+
+%%% 13
+\bibitem{mouse}
+\begin{botherref}
+The Mouse Tumor Biology Database.
+\url{http://tumor.informatics.jax.org/cancer\_links.html}
+\end{botherref}
+\endbibitem
+
+\end{thebibliography}
