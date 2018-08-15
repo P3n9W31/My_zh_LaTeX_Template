@@ -1,0 +1,126 @@
+%中文latax模版
+\documentclass[11pt,onecolumn,twoside]{Lart}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  packages
+%    这部分声明需要用到的包
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{CJK}         % CJK 中文支持
+\usepackage{fancyhdr}
+\usepackage{amsmath,amsfonts,amssymb,graphicx}    % EPS 图片支持
+\usepackage{subfigure}   % 使用子图形
+\usepackage{indentfirst} % 中文段落首行缩进
+\usepackage{bm}          % 公式中的粗体字符(用命令\boldsymbol）
+\usepackage{multicol}    % 正文双栏
+\usepackage{indentfirst} % 中文首段缩进
+\usepackage{picins}      % 图片嵌入段落宏包 比如照片
+\usepackage{abstract}    % 2栏文档，一栏摘要及关键字宏包
+\usepackage{amsthm}      % 使用定理
+\usepackage{booktabs}    % 使用表格
+\usepackage{titlesec}
+\usepackage{times}
+\usepackage{wasysym}
+\usepackage[sort]{cite}
+%\def\citedash{$\sim$} % for creating cites like [3,4],[7~10]
+%\renewcommand{\theequation}{\thesection.\arabic{equation}}(公式按节编号)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  lengths
+%    下面的命令重定义页面边距，使其符合中文刊物习惯。
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{lettrine}
+\setlength{\voffset}{-25pt} \setlength{\topmargin}{0pt}
+\setlength{\headsep}{1mm} \setlength{\textheight}{252mm}
+\setlength{\textwidth}{171mm} \setlength{\hoffset}{4.9pt}
+\setlength{\evensidemargin}{-29pt}\setlength{\oddsidemargin}{0pt}
+\setlength{\parskip}{1pt} \setlength{\columnsep}{7mm}
+\setlength{\arraycolsep}{1pt}
+\renewcommand{\baselinestretch}{1.15} %定义行间距
+\setcounter{page}{1} \makeatletter
+\renewcommand\section{\@startsection {section}{1}{\z@}%
+                                   {-1pt }%
+                                   {1pt}%
+                                   {\normalfont\large\bfseries}}
+\renewcommand\subsection{\@startsection {subsection}{1}{\z@}%
+                                   {-1pt }%
+                                   {1pt}%
+                                   {\normalfont\normalsize\bfseries}}
+\renewcommand\subsubsection{\@startsection {subsubsection}{1}{\z@}%
+                                   {-1pt }%
+                                   {1pt}%
+                                   {\normalfont\normalsize\bfseries}}
+ \renewcommand{\CJKglue}{\hskip -0.4pt plus 5.5\baselineskip}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setlength{\parskip}{1pt} \allowdisplaybreaks \makeatother
+\begin{CJK*}{GBK}{song}
+\CJKcaption{GB}
+\newtheoremstyle{mystyle}{3pt}{3pt}{}{\parindent}{\bfseries}{}{5mm}{}
+\theoremstyle{mystyle}
+\newtheorem{Cor}{\normalsize{{\CJKfamily{hei}推论}}}
+\newtheorem{Thm}{\normalsize{{\CJKfamily{hei}定理}}}
+\newtheorem{Site}{\normalsize{{\CJKfamily{hei}引理}}}
+\newtheorem{Def}{\normalsize{{\CJKfamily{hei}定义}}}
+\newtheorem{Rem}{\normalsize{{\CJKfamily{hei}注}}}
+\newtheorem{Exa}{\normalsize{{\CJKfamily{hei}例}}}
+\newtheorem{Ste}{\normalsize{{\CJKfamily{hei}步骤}}}
+\newtheorem{Sup}{\normalsize{{\CJKfamily{hei}假设}}}
+\newtheoremstyle{citing}{3pt}{3pt}{}{}{\bfseries}{.}{.5em}{\thmnote{#3}}
+\theoremstyle{citing}\newtheorem*{citedthm}{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\diag}{{\rm diag}}
+\newcommand{\rank}{{\rm rank}}
+\newcommand{\tr}{{\rm tr}}
+\newcommand{\sign}{{\rm sign}}
+\newcommand{\sgn}{{\rm sgn}}
+\newcommand{\Proj}{{\rm Proj}}
+\end{CJK*}
+\makeatletter
+\renewcommand{\proofname}{\normalsize{{\CJKfamily{hei}证}}}
+\renewenvironment{proof}[1][\proofname]{\par
+  \pushQED{\qed}%
+  \normalfont \topsep.1\p@\@plus.1\p@ \labelsep0em\relax
+  \trivlist
+  \item[\hskip 2.2em
+        \bfseries
+    #1]\hskip .5em\ignorespaces
+}{%
+  \endtrivlist\@endpefalse
+} \makeatother
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%define the format like [1-2]
+\makeatletter
+\def\@compress@cite#1{%  % This is executed for each number
+  \advance\@tempcnta\@ne % Now \@tempcnta is one more than the previous number
+  \ifnum #1=\@tempcnta   % Number follows previous--hold on to it
+        \def\@h@ld{\citedash \citeform{#1}}%
+  \else   %  non-successor -- dump what's held and do this one
+     \@h@ld \@citea \citeform{#1}%
+     \let\@h@ld\@empty
+  \fi \@tempcnta#1\let\@citea\citepunct
+} \makeatother
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 首页页眉页脚定义
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\fancypagestyle{plain}{ \fancyhf{}\vspace{15pt}
+\lhead{\footnotesize \quad 第~xx~卷 第~x~期\\
+{\quad xxxx~年~x~月}}
+\chead{\centering{{\CJKfamily{kai}\large 这~~里~~输~~入~~页~~眉}\\
+{{\small Here is the English Head}}
+}}
+\rhead{\footnotesize {Vol. xx No. x~~~~~}\\
+{Xxx. xxxx~~~~}}
+\lfoot{} \cfoot{} \rfoot{}
+\renewcommand{\headrule}{%
+\hrule height0.4pt width \headwidth \vskip1.0pt%
+\hrule height0.4pt width \headwidth \vskip-2pt}}
+\renewcommand{\footrulewidth}{0.4pt}
+\setlength{\hoffset}{0.1pt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{fancy} \fancyhf{}
+\fancyhead[RE]{{\footnotesize 第~xx~卷~~~}}
+\fancyhead[CE]{{\footnotesize 这~~里~~输~~入~~页~~眉}}
+\fancyhead[LE,RO]{~~~\footnotesize\thepage ~~~}
+\fancyhead[LO]{{\footnotesize ~~~第~x~期}}
+\lfoot{} \cfoot{}
+\rfoot{}

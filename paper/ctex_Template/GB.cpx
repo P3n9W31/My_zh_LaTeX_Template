@@ -1,0 +1,84 @@
+% This is the file GB.cpx of the CJK package
+%   for using Asian logographs (Chinese/Japanese/Korean) with LaTeX2e
+%
+% created by Werner Lemberg <wl@gnu.org>
+%
+% Version 4.8.2 (29-Dec-2008)
+
+% Copyright (C) 1994-2008  Werner Lemberg <wl@gnu.org>
+%
+% This program is free software; you can redistribute it and/or modify
+% it under the terms of the GNU General Public License as published by
+% the Free Software Foundation; either version 2 of the License, or
+% (at your option) any later version.
+%
+% This program is distributed in the hope that it will be useful,
+% but WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+% GNU General Public License for more details.
+%
+% You should have received a copy of the GNU General Public License
+% along with this program in doc/COPYING; if not, write to the Free
+% Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston,
+% MA 02110-1301 USA
+
+\def\fileversion{4.8.2}
+\def\filedate{2008/12/29}
+\ProvidesFile{GB.cpx}[\filedate\space\fileversion]
+
+
+% Chinese captions
+%
+% character set: GB 2312-80
+% encoding: EUC
+%
+% preprocessed
+
+\renewcommand\contentsname{Ä191Â188}
+% \renewcommand\listfigurename{}             %   ?
+% \renewcommand\listtablename{}              %   ?
+
+\CJK@ifundefined\chapter
+  {\newcommand\refname{²206¿188×202Á207}}
+  {\newcommand\bibname{Î196Ï215}}
+
+\renewcommand\indexname{Ë247Ò253}
+
+\newcommand\prefigurename{µ218}
+\newcommand\postfigurename{Í188}
+\newcommand\figureformat{\prefigurename~\thefigure~\postfigurename}
+
+\newcommand\pretablename{µ218}
+\newcommand\posttablename{±237}
+\newcommand\tableformat{\pretablename~\thetable~\posttablename}
+
+\newcommand\prepartname{µ218}
+\newcommand\postpartname{²191}
+\newcommand\partformat{\prepartname\CJKnumber{\value{part}}\postpartname}
+
+% \newcommand\prechaptername{µ218}
+% \newcommand\postchaptername{Õ194}
+% \newcommand\presectionname{µ218}
+% \newcommand\postsectionname{½218}
+% \newcommand\preappendixname{µ218}
+% \newcommand\postappendixname{¸189Â188}
+
+\CJK@ifundefined\mainmatter
+  {\renewcommand\abstractname{Õ170Ò170}}{}
+
+% \renewcommand\ccname{}                     %   ?
+% \renewcommand\enclname{¸189¼254}
+% \newcommand\prepagename{}                  %   ?
+% \newcommand\postpagename{}                 %   ?
+% \renewcommand\headtoname{}                 %   ?
+% \renewcommand\seename{}                    %   ?
+
+\renewcommand\today{%
+  \number\year Ä234\number\month Ô194\number\day È213}
+\CJK@ifundefined\CJKnumber
+  {\def\CJKnumber#1{%
+     \ifcase #1\or
+     Ò187\or ¶254\or È253\or Ë196\or Î229\or
+     Á249\or Æ223\or °203\or ¾197\or Ê174\fi}}{}
+
+\endinput

@@ -1,0 +1,351 @@
+\input head
+% 请仔细阅读文件head.tex, 但是不要更改其中的内容.
+\usepackage{epstopdf}
+\graphicspath{{./figures/}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%      文章正文
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 标题，基金项目，作者，通信地址定义
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\makeatother
+\begin{CJK*}{GBK}{song}
+\title{\LARGE\textbf{LaTex模板规则和论文格式要求}\\ \vspace{-0.9cm}
+\begin{minipage}[c]{10cm}
+\vspace{-2.0cm} \hskip -3.4cm
+%\footnotesize{DOI:10.7641/CTA.201x.xxxxx}
+\end{minipage}
+\footnotetext{\scriptsize \hskip -6pt
+\hspace*{-0.1em}收稿日期: xxxx$-$xx$-$xx; 录用日期: xxxx$-$xx$-$xx.\\
+\hspace*{1.1em}$^{\dag}$通信作者. E-mail: auxx@scut.edu.cn; Tel.: +86 20-87111464.\\
+\hspace*{1.1em}国家自然科学基金项目(61164015, 61305132),
+江西省自然科学基金项目(20151BAB207043)资助.\\
+\hspace*{1.1em}Supported by National Natural Science Foundation of China(61164015,  61305132),
+National Natural Science Foundation of Jiangxi Province (20151\\
+\hspace*{1.1em}BAB207043).}}
+\author{{\large {\CJKfamily{fsong}张~~~~三\makebox{$^{1}$}\makebox{$^{\dag}$},~~李某某\makebox{$^{2}$}}}\\
+\scriptsize
+ 1. 广州大学~数学与信息科学学院, 广东~广州~510006;\\
+\scriptsize 2. 中国科学院数学与系统科学研究院~系统科学研究所,
+北京~100080 \\}
+\date{}  % 这一行用来去掉默认的日期显示
+\CJKcaption{GB}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 奇数页页眉
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\fancyhead[CO]{{\footnotesize 张三等: 期刊论文模板 论文格式要求}}            % 请在这里写出第一作者以及论文题目
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  请作者不要修改下面4条命令！
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setlength{\abovedisplayskip}{1.5mm}
+\setlength{\belowdisplayskip}{1.5mm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  显示title，并设页码为空(按杂志社要求）
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\maketitle
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%      中文摘要
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setlength{\oddsidemargin}{ 1cm}  % 3.17cm - 1 inch
+\setlength{\textwidth}{15.5cm} \vspace{-1.2cm}
+\begin{center}
+\parbox{\textwidth}{\setlength{\parindent}{1em}
+{\renewcommand{\CJKglue}{\hskip 0pt plus 5.5\baselineskip}
+\footnotesize {\CJKfamily{hei} 摘要:}
+本文给向期刊投稿的作者提供一个中文LaTex模版,
+分几个章节进行说明, 其中包括定理、\!\!定义、\!\!推论等的格式;
+公式编排的例子; 图形插入;
+表格制作以及参考文献、\!\!附录、\!\!作者简介等内容的格式.
+作者只需在相应的位置填入相应的内容即可.
+
+{\CJKfamily{hei} 关键词:} 关键词1; 关键词2; 关键词3; 关键词4;
+关键词5
+
+{\CJKfamily{hei}中图分类号:}  TP273\qquad~~
+{\CJKfamily{hei}文献标识码: A }}}
+\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%          英文摘要
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{.1cm}
+\begin{center}
+\parbox{\textwidth}{\setlength{\parindent}{1em}
+{\centering\Large\textbf{Template of paper for control theory and
+applications\\}} \vspace{-1.2mm}
+\begin{center}
+ZHANG San\makebox{$^{1}$}\makebox{$^{\dag}$},~~LI Mou-mou\makebox{$^{2}$ }\\[2pt]
+\scriptsize{(1. College of Automation Science and Technology, South
+China University of Technology,\\ Guangzhou Guangdong 510640, China;\\
+2. Institute of Systems Science,Academy of Mathematics and Systems
+Science, Chinese Academy of Science,\\Beijing~100080, China)}
+\end{center}
+
+\vspace{-10pt}\footnotesize{\textbf{Abstract:} This article is
+designed to
+ help in the contribution for
+ Journals. It is divided into several
+sections. It consists of the styles and notes for the main text, the
+Mathematical writing style and
+ the topic of drawing tables and inserting figures
+respectively. The residuals deal with references, appendix,
+acknowledges, etc.
+
+\textbf{Key words:} keyword1; keyword2; keyword3}}
+\end{center}
+
+\renewcommand\refname{\normalsize{{\CJKfamily{hei}参考文献}}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  正文由此开始－－－－－－－－－－－－－－－－－－－－－－－－－
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  恢复正文页边距
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setlength{\oddsidemargin}{-.5cm}  % 3.17cm - 1 inch
+ \setlength{\textwidth}{171mm}
+\CJKfamily{song}
+\vspace{10pt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  分栏开始
+\begin{multicols}{2}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\fontsize{10.5bp}{12.9bp}\selectfont
+\section{引言({\rm Introduction})}
+LaTex模版排版.
+本文针对排版中一些常见问题做以下说明:
+
+1)~~标点符号: 文中的所有标点符号均采用英文状态下的符号,
+且其后空一格.
+
+2)~~论文题目: 题目一般不超过20个字, 文字简练、具体.
+尽量避免“基于$\cdots$”“$\cdots$的研究”之类修饰性词语.
+英文题目第1个单词的首字母大写, 其他均用小写.
+
+3)~~摘要:
+摘要一般应包括研究目的、\!\!研究过程采用的主要方法、\!\!研究的主要结果和结论4 大部分,
+同时要注意摘要的完整性、\!\!可读性、\!\!通俗性和逻辑性,
+英文摘要在150$\sim$250个词汇, 第1次出现缩写必须给出全称.
+
+
+4)~~关键词: 关键词一般3$\sim$8个, 英文关键词每个字母均为小写.
+
+5)~~标题: 文章标题一般包含一级标题、\!\!二级标题甚至三级标题等,
+例如: 2; 2.1; 2.1.1等, 每一级标题必须给出相应的英文翻译,
+且英文部分除第1个字母大写外其余均为小写.
+
+6)~~数学符号: 数学符号需用公式环境, 且与前后的文字之间没有空格, 如:
+函数$a, n, R$等.
+
+7)~~插图: 文章中的图应以.eps的格式插入, 且图中的有关说明应用中文,
+需要给出相应坐标的变量及单位. 图的标题应该有中英文两种形式,
+标题在图的正下方, 例子见第4节.
+
+8)~~表格: 表格统一要求三线表(即: 表格中没有竖线,
+只有三条横线(特殊情形可以为两条等), 且中英文标题在表格的正上方.
+例子见第5节.
+
+9)~~参考文献: 文章中的参考文献的引用应该按从小到大的顺序, 例如:
+
+文章见文献~cite{1,2}, 会议中的论文见文献\!\cite{3},
+研究生论文一般只引用博士论文\!\textsuperscript{\cite{4}},
+也可以这样引用\!\textsuperscript{\cite{1,4,5,6}}.
+
+文章中引用参考文献时, 应该用上段所用的方式引用, 即:
+平齐时用命令\verb|\cite{...}|,
+上标时用\verb|\textsuperscript{\cite{...}}|.
+\section{应用环境({\rm Environment})}
+\begin{Thm}
+应用这个环境, 定理编号将自动生成.
+\end{Thm}
+\begin{Site}
+应用这个环境, 引理编号将自动生成.
+\end{Site}
+\begin{Cor}
+应用这个环境, 推论编号将自动生成.
+\end{Cor}
+\begin{Def}
+应用这个环境, 定义编号将自动生成.
+\end{Def}
+\begin{Sup}
+应用这个环境, 假设编号将自动生成.
+\end{Sup}
+\begin{Rem}{\fontsize{9.3pt}{11.6pt}\selectfont 注释内容是小五宋体.}\end{Rem}
+此定理的证明可以通过以下步骤形成:
+\begin{Ste}首先, 假设$\cdots$\end{Ste}
+\begin{Ste}其次, 证明$\cdots$\end{Ste}
+\begin{Ste}最后, 得到$\cdots$\end{Ste}
+\section{公式的例子({\rm Examples of equations})}
+\subsection{公式的应用环境({\rm Environment of equations})}
+公式请用环境\\
+ \verb|\begin{eqnarray}...\end{eqnarray}|
+
+ 或者\\
+\verb|\begin{eqnarray*}...\end{eqnarray*}|\\
+生成.
+\subsection{几个实例({\rm Examples})}
+\begin{Exa}
+\begin{eqnarray}
+{\Arrowvert x^{(1)}_{k+1}-x^{(1)}_k\Arrowvert}_\lambda&\leqslant&
+\frac{1}{1-h_1(i)}\Arrowvert x^{(1)}_{k+1}(0)-x^{(1)}_k(0)\Arrowvert+\notag\\
+&&\frac{h_2(i)}{1-h_1(i)}{\Arrowvert
+e^{(1)}_k\Arrowvert}_\lambda+\rho(Q),
+\end{eqnarray}
+以及
+\begin{eqnarray}
+&&\left\{\begin{aligned}
+&\dot{x}(t)\begin{array}{l}\sum\limits_{i=0}^{2n_{x}}\end{array}=A^c x(t)+B^cu(t)+ E^c d(t),\\
+&z(t)=C^c x(t).
+\end{aligned}\right.\ \ t\in \mathbb{R}^+\notag\\
+\end{eqnarray}\end{Exa}
+\begin{Exa}几种不同的情况.
+\end{Exa}
+
+1)~~省略了矩阵中部分元素的例子.
+\begin{eqnarray}
+\begin{pmatrix}
+a_{11}& a_{12}&\dots &a_{1n}\\
+a_{21}& a_{22}&\dots &a_{2n}\\
+\vdots&\vdots&       &\vdots\\
+a_{n1}& a_{n2}&\dots &a_{nn}
+\end{pmatrix}
+\end{eqnarray}
+
+2)~~矩阵中小数点对齐的例子.
+\begin{eqnarray}
+&&A_1=\left[\begin{array}{r@{ }l@{~~~~}r@{ }l} 1& &-2&\\-2& &4&
+\end{array}\right],\\
+&&A_2=\left[\begin{array}{r@{.}l@{~~~~}r@{.}l} 1&1 &-2&7\\-2&3 &4&6
+\end{array}\right].
+\end{eqnarray}
+
+3)~~调整公式字体大小的特例.
+
+用命令 \textbackslash displaystyle  可以调整在文字中过小的公式.
+$f(z)\thickapprox{\displaystyle\frac{1+\frac{1}{2}z+z^2+\frac{1}{2}z^3}{1-\frac{1}{2}z+z^2}}.$
+类似前面这样的例子.
+
+用命令 \textbackslash textstyle 可以调整公式中过大的情况. 如下:
+\begin{eqnarray}
+&&\!\!\!\!\!{\bm z}^{\rm T}(t)\{A_q^{\rm T}[P(t)+I]A_q-[P(t)+I]\}{\bm z}(t)+ \nonumber\\
+&&\!\!\!\!\!{\textstyle\sum\limits_{i=1}^m}\varint\nolimits_{t-\tau_i}^t\!\!{\bm
+z}^{\rm T}(s)\{A_q^{\rm T}A_q-I\}{\bm z}(s){\rm d}s\leqslant 0.
+\end{eqnarray}
+
+4)~~公式的编号问题.
+
+有些地方对于公式的编号需要子公式编号, 也就是说,
+当这个环境之前的公式编号是(6)时, 那么此环境中的公式按照(7a), (7b),
+(7c),$\cdots$的顺序编号.
+\begin{subequations}
+\begin{eqnarray}
+\dot{x}(t)&=&A_{i}x_{t}(0)+A_{i1}x_{t}(-r),  t\geqslant t_{0}.
+\end{eqnarray}
+在第1个子公式和第2个子公式之间可以添加文字内容.
+\begin{eqnarray}
+ s:&=&\big\{(t_{0}, \pi(0)), \cdots
+(t_{k}, \pi(k)), \cdots |\notag\\
+&&t_{i}<t_{j}, i<j;\lim\limits_{k\rightarrow \infty}t_{k}=\infty
+\big\}.
+\end{eqnarray}
+在第2个子公式和第3个子公式之间同样可以添加文字内容.
+\begin{eqnarray}
+\left\{\begin{aligned}
+&\dot{x}(t)=A_{i}x_{t}(0)+A_{i1}x_{t}(-r),\\
+&y(t)=C_{i}x_{t}(0);t\geqslant t_{0}, i\in\{1, 2\},
+\end{aligned}\right.
+\end{eqnarray}
+\end{subequations}
+
+\section{插图({\rm Figures})}
+Latex对于图形的要求: 对于一般的图形, 只需要用软件Acrobat Reader打开,
+然后另存为.eps即可, 再利用下面的环境插入图形即可. 图形的位置由命令
+中“trim=0 0 0 0”来控制, 可以通过修正其中的4个参数来移动图形的位置.
+所给出的4个数字分别表示从图形的左边缘、\!\!下边缘、\!\!右边缘、\!\!上边缘被截去的值,
+正数表示从边缘截去的大小, 而负数表示从边缘加上的大小.
+\begin{center}
+\includegraphics [scale=1,trim=0 0 0 0]{1-1.eps}\\
+\label{Fig1}
+{\fontsize{9.3pt}{11.6pt}\selectfont 图~1~~图形标题\\
+Fig.~1~~Title of figure }
+\end{center}
+\section{表格({\rm Tables})}
+\begin{center}
+{\CJKfamily{kai} 表~1~~模糊控制规则\\
+Table~1~~Fuzzy control rules}\\
+\label{tab:1} \vskip 3pt
+\newcommand{\rb}[1]{\raisebox{1.9ex}[-2pt]{#1}}
+%\renewcommand\tabcolsep{2pt}
+{\fontsize{9.3pt}{11.6pt}\selectfont
+\begin{tabular}{@{ }lllllllr@{ }}\toprule
+&\multicolumn{7}{c}{$\Delta e$}\\
+\cmidrule(l){2-8} \rb{~~$e$} & NB & NM & NS & ZO & PS & PM &
+PB\\\midrule
+NM & NB & NM & NS & ZO & PS & PM & PB\\
+NS & NB & NM & NS & ZO & PS & PM & PB\\
+NO & NB & NM & NS & ZO & PS & PM & PB\\
+PO & NB & NM & NS & ZO & PS & PM & PB\\
+\bottomrule
+\end{tabular}}\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  参考文献
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip 12pt
+ {\fontsize{7.8pt}{9.4pt}\selectfont
+\begin{thebibliography}{99} \vskip 7pt
+\setlength{\parskip}{-2pt}  %段落之间的竖直距离
+%1
+\bibitem{1}ZHANG X,  WANG M, ZHAO J. Stability analysis and antiwindup design of
+uncertain discrete-time switched linear systems subject to actuator
+saturation[J]. {\it Journal of Control Theory and Applications},
+2012, 10(3): 325 -- 331.
+%2
+\bibitem{2}
+CAO Yu, JING Yuanwei. Modeling and stability analysis for SIRS
+model with nonlinear infection rate[J]. {\it Control Theory \&
+Applications}, 2013, 30(2): 229 -- 232.\\
+(曹宇, 井元伟.
+带有非线性感染率的SIRS模型的建立与稳定性分析~[J]. xx期刊,
+2013, 30(2): 229 -- 232.)
+%3
+\bibitem{3}DOGRUEL M, OZGUNZER U. Stability of hybrid systems[C] //\textit{Proceedings of IEEE International Symposium on Intelligent
+Control}. New York: IEEE, 1994, 8: 129 -- 134.
+%4
+\bibitem{4}LI B. \textit{The main algorithm research on financial time
+series data mining}[D]. Hefei: University of Science and Technology
+of China, 2001.
+%6
+\bibitem{5}WANG R X. \textit{Random Process}[M]. Xi'an : Xi'an Jiaotong University
+Press, 1993.
+%7
+\bibitem{6}HAYKIN S, BROCKETT R W. Adaptive filtering theory[M] //\textit{Essays in Control}. New York, American: Prentice Hall, 1996.
+\end{thebibliography}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 附录
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ \vskip 7pt
+\normalsize\textbf{ 附录~~~~附录标题}(Appendix~~Title of appendix)\\
+\indent
+ {\fontsize{9.3pt}{11.6pt}\selectfont{\renewcommand\baselinestretch{1.05}\selectfont
+ 附录内容.}}
+ \vskip 7pt
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 作者简历
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\noindent
+{\CJKfamily{kai} 作者简介:}\\
+ {\scriptsize
+\indent
+\textbf{张~~~~三}~~~~(1961--), 男, 作者简历, 目前研究方向, E-mail: zhangsan@sina.com.cn;\\
+\indent \textbf{李某某}~~~~(1958--), 女, 作者简历, 目前研究方向,
+E-mail: limm@sina.com.cn.}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  分栏结束
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{multicols}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  文章结束
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage
+\end{CJK*}
+
+\end{document}
