@@ -1,0 +1,172 @@
+% -- Encoding UTF-8 without BOM
+% -- XeLaTeX => PDF (BIBER)
+
+\documentclass[]{cv-style}          % Add 'print' as an option into the square bracket to remove colours from this template for printing. 
+                                    % Add 'espanol' as an option into the square bracket to change the date format of the Last Updated Text
+
+\sethyphenation[variant=british]{english}{} % Add words between the {} to avoid them to be cut 
+
+\usepackage{ctex} %Chinese Support
+
+\begin{document}
+
+\header{John}{Smith}           % Your name
+\lastupdated
+
+%----------------------------------------------------------------------------------------
+%	SIDEBAR SECTION  -- In the aside, each new line forces a line break
+%----------------------------------------------------------------------------------------
+
+\begin{aside}
+%
+\section{contact}
+123 Broadway
+City, State 050022
+Country
+~
++0 (000) 111 1111
++0 (000) 111 1112
+~
+john@smith.com
+%
+\section{languages}
+English mother tongue
+Spanish fluency
+%
+\section{programming}
+{\color{red} $\varheartsuit$} R
+VBA, SQL, Python
+\LaTeX{}
+%
+\end{aside}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{skills}
+  \vspace{-0.2cm}
+
+Skill 1, skill 2, skill 3, skill 4, skill 5.
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{experience}
+
+\begin{entrylist}
+%------------------------------------------------
+\entry
+  {2014--Now}
+  {COMPANY 3}
+  {City, Country}
+  {\jobtitle{Job Title}\\
+  Job description. Job description. Job description. Job description. Job description. Job description. Job description. Job description. Job description. Job description. Job description.}
+%------------------------------------------------
+\entry
+  {2011--2014}
+  {COMPANY 2}
+  {City, Country}
+  {\jobtitle{Job Title}\\
+  Job description. Job description. Job description. Job description. Job description. Job description. Job description. Job description. Job description. Job description.\\
+  Detailed achievements:
+  \begin{itemize}
+    \item Achievement 1. Achievement 1. Achievement 1. 
+    \item Achievement 2. Achievement 2. Achievement 2. Achievement 2. Achievement 2. Achievement 2.
+    \item Achievement 3. Achievement 3. Achievement 3. Achievement 3.  
+  \end{itemize}}
+%------------------------------------------------
+\entry
+  {2008--2011}
+  {COMPANY 1}
+  {City, Country}
+  {\jobtitle{Job Title}\\
+  Job description. Job description. Job description. Job description. Job description. Job description. Job description. Job description. Job description. Job description.\\
+  Detailed achievements:
+  \begin{itemize}
+    \item Achievement 1. Achievement 1. Achievement 1. Achievement 1. Achievement 1. Achievement 1. Achievement 1. Achievement 1. 
+  \end{itemize}}
+%------------------------------------------------
+\entry
+  {2007--2008}
+  {COMPANY 1}
+  {City, Country}
+  {\jobtitle{Job Title}\\
+  Job description. Job description. Job description. Job description. Job description. Job description. Job description. Job description. Job description. Job description.\\}
+%------------------------------------------------
+
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{education}
+
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{2010--2011}
+{M.Sc. {\normalfont in Economics [Grade]}}
+{University}
+{\vspace{-0.3cm}}
+%------------------------------------------------
+\entry
+{2004--2009}
+{B.Eng. {\normalfont in Engineering Management [Grade]}}
+{University}
+{(Emphasis in ...)}
+%------------------------------------------------
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	OTHER QUALIFICATIONS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{other qualifications}
+
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{2013}
+{Qualification}
+{Institution}
+{\vspace{-0.3cm}}
+%------------------------------------------------
+\entry
+{2011}
+{Qualification}
+{Institution}
+{\vspace{-0.3cm}}
+%------------------------------------------------
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{awards}
+
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{2014}
+{Award name}
+{Institution}
+{Award description. Award description. Award description. Award description. Award description. Award description. Award description. }
+%------------------------------------------------
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{interests}
+  \vspace{-0.2cm}
+
+\textbf{professional:} professional interest 1, professional interest 2 and professional interest 3. \textbf{personal:} personal interest 1, personal interest 2, personal interest 3 and personal interest 4.
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
