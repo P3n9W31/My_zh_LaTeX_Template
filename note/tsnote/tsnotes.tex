@@ -1,0 +1,78 @@
+\documentclass{tsnotes}
+\usepackage{ctex}
+\usepackage{float}
+\usepackage{lipsum}
+
+\begin{document}
+
+\tstitle{\LaTeX~Note}
+
+\section{First Section——第一节}
+\lipsum[1]
+
+
+\section{Second Section——第二节}
+中文宏包测试               \par 
+{\songti   这是宋体的样式。} 
+{\heiti    这是黑体的样式。} 
+{\fangsong 这是仿宋的样式。} 
+{\kaishu   这是楷书的样式。} \par
+
+\section{Third Section——第三节}
+\lipsum[1-2]
+\section{Fourth Section——第四节}
+\begin{lstlisting}[title=代码块1,language=Python]
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.next = None
+
+class Solution:
+    def mergeTwoLists(self, l1, l2):
+        """
+        :type l1: ListNode
+        :type l2: ListNode
+        :rtype: ListNode
+        """
+        head = ListNode(0)
+        l3 = head
+        
+        while l1 and l2:
+            if l1.val > l2.val:
+                l3.next = ListNode(l2.val)
+                l3 = l3.next
+                l2 = l2.next
+            else:
+                l3.next = ListNode(l1.val)
+                l3 = l3.next
+                l1 = l1.next
+        if l1:
+            while l1:
+                l3.next = ListNode(l1.val)
+                l3 = l3.next
+                l1 = l1.next
+        if l2:
+            while l2:
+                l3.next = ListNode(l2.val)
+                l3 = l3.next
+                l2 = l2.next
+        return head.next
+\end{lstlisting}
+
+
+\subsection*{Example}
+
+If you ever wanted to know the area of a circle, you could compute
+
+
+this integral:
+
+\begin{equation}
+  A = \int_0^R \int_0^{2\pi} r \,\mathrm{d}\varphi\,\mathrm{d}r
+    = \pi R^2.
+\end{equation}
+
+\fixme{It's great to make a note of things that need to be fixed.}
+
+\end{document}
