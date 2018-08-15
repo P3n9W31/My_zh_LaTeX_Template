@@ -1,0 +1,200 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% modern themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+\usepackage{ctex} % Chinese Support
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+\usepackage{import}
+
+% personal data
+\name{My}{Name}
+\title{Curriculum Vitae}                               % optional, remove / comment the line if not wanted
+\address{my address, line 1, line 2, line 3, postcode}{}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+44 12345 12345}                   % optional, remove / comment the line if not wanted
+\phone[fixed]{01234 123456}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{myname@hotmail.co.uk}                               % optional, remove / comment the line if not wanted
+\homepage{www.myname.webs.com}                         % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\small{Undergraduate electrical and electronic engineer completing the final year of a master's degree. Passionate about science, with strong technical, business, and interpersonal skills for working in a team and successfully completing a project.}
+
+\section{Previous Employment}
+
+\vspace{6pt}
+
+\begin{itemize}
+
+\item{\cventry{July 2013--August 2013}{Construction Site Operative}{Eurogold Groundworks and Civil Engineering}{Moston}{}{\vspace{3pt}I was responsible for the administrative duties and the tidiness and general order of the site. I worked in a safety-oriented manner, often working alongside construction plant and machinery. At the end of my work with the company my colleagues praised my work ethic.}}
+
+\vspace{6pt}
+
+\item{\cventry{2009--2011}{Waiter, Catering and Banqueting}{Lavender Best Western Park Hall Hotel}{Charnock Richard}{}{\vspace{3pt}I worked for three years as a team leader providing silver service at weddings, stag/hen nights, and business conferences. I was often trusted with other jobs such as setting up conference rooms, moving beds around the hotel, and guiding big groups of customers to their rooms. As a team leader I would delegate tasks to a team of about 5 people, often new staff who needed training, and lead the group to service. During this time I worked in a highly professional manner and was focused to provide excellent customer service, even during high stress functions and events.}}
+
+\vspace{6pt}
+
+\item{\cventry{January 2008}{Assistant Electrician}{Ryan Electricals}{Southport}{}{\vspace{3pt}I spent a week working as an assistant electrician as part of my high school work experience. My roles included wiring plugs, tidying, and assisting with household electrical repairs and fittings.}}
+
+\end{itemize}
+
+\section{Education}
+
+\vspace{5pt}
+
+\subsection{Academic Qualifications}
+
+\vspace{5pt}
+
+\begin{itemize}
+
+\item{\cventry{2011--2015}{Meng (Hons) Electrical and Electronic Engineering }{Lancaster University}{Lancaster}{\textit{Predicted First Class}}{}}
+
+\item{\cventry{2009--2011}{A levels}{Runshaw College}{Leyland}{\textit{ICT (A) Physics (B) Maths (B)}}{}}  % arguments 3 to 6 can be left empty
+
+\item{\cventry{2002--2009}{11 GCSEs}{Southlands High School}{Chorley}{\textit{A* to B Including Maths and English}}{}}
+
+\end{itemize}
+
+\vspace{2pt}
+
+\subsection{Notable Projects}
+
+\vspace{5pt}
+
+\begin{itemize}
+
+\item{\textbf{Masters Project (Ongoing):} \textit{'Development of an Intelligent Humanoid Robot'}
+
+\vspace{3pt}
+
+\small{I am part of a team developing a 5ft autonomous humanoid robot. This ambitious project requires strong team-working skills and high technical ability. I work well as part of the team, contributing in group discussions and taking initiative to set myself tasks when the next stage of the project is not clear. Given the role of electronics supervisor I am responsible for setting goals and ensuring all the electronic system designs are realised on time and meet the specifications of the project.}}
+
+% \newpage
+
+\item{\textbf{3rd year individual project:} \textit{'Artificial Neural Network Approach to Source Localisation in Radiation Portal Monitoring'}
+
+\vspace{3pt}
+
+\small{This challenging project took place over the entirety of my third year. It required excellent planning and organisational skills, and the ability to teach myself an entirely new and complex subject. The project was a success, with the system being able to localise a radioactive source down to $ 3 cm$ within a $ 600 m^3$ sensor array. This project has been suggested for publication by my supervisor.}}
+
+\vspace{6pt}
+
+\item{\textbf{Industrial Project with Leyland Motors Ltd:}\textit{'Development of a Facility to Ensure the Achievement of Torque Parameters for a Specific Axle Configuration'}
+
+\vspace{3pt}
+
+\small{In the 3rd year of my course I spent a week completing an industrial project for Leyland Motors. I worked with a team operating as consultants for a particular problem the company was having. During this project I was working in a professional environment, and co-operating with various managers and engineers to create a design that met the requirements of the problem.}}
+
+\end{itemize}
+
+\section{Technical and Personal skills}
+
+\vspace{6pt}
+
+\begin{itemize}
+
+\item \textbf{Programming Languages:} Proficient in: C, C++, Python, Matlab, Arduino, TeX \\ Also basic ability with: Assembly, VBA, VHDL.
+
+\vspace{6pt}
+
+\item \textbf{Industry Software Skills:} SolidWorks (Advanced), Matlab (Advanced), Ansys (Intermediate),  LTspice (Intermediate), Most MS Office products including MS project and MS access (Advanced).
+
+\vspace{6pt}
+
+\item \textbf{General Business Skills:} Good presentation skills, Works well in a team.
+
+\vspace{6pt}
+
+\item \textbf{Other:} Good soldering and spot welding skills, Can write well organised and structured reports.
+
+\end{itemize}
+
+\section{Interests and extra-curricular activity}
+
+\vspace{6pt}
+
+\begin{itemize}
+
+\item{I was a "fresher representative" in my 2nd and 3rd years of university, this required me to guide, look after, and ensure that a particular flat of first years have a good time in their first week, and feel consoled in what for most of them is there first time living away from home. We were responsible for the safety and wellbeing of the group of first years during the first week, and during this time I made good friends with all of them.}
+
+\vspace{6pt}
+
+\item{I am a member of a number of university societies. I was also the vice president and co-founder of the flash mob society. My roles in this included recruiting members, in which during "fresher's fair" we enlisted over 200 new members. This was regarded as very successful, considering other societies averaged around 50. I also appeared in an interview on the university television station, set up a society bank account, and helped organise the events. One of these events was featured in the local newspaper.}
+
+\vspace{6pt}
+
+\item{I am also an avid hiker, having completed the national 3 peaks challenge last summer. Other interest include guitar, which I am self-taught, and home brewing.}
+
+\end{itemize}
+
+\section{References}
+
+\vspace{6pt}
+ 
+\begin{itemize}
+
+\item{Up to 4 references available on request}
+
+\end{itemize}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+%-----       letter       ---------------------------------------------------------
+
+\end{document}
+
+
+%% end of file `template.tex'.
