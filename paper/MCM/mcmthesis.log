@@ -1,0 +1,102 @@
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xetex 2017.10.8)  15 JAN 2018 15:39
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**mcmthesis.dtx xelatex mcmthesis.dtx xelatex mcmthesis.dtx xelatex mcmthesis-d
+emo.tex xelatex mcmthesis-demo.tex
+(./mcmthesis.dtx
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/docstrip.tex
+\blockLevel=\count28
+\emptyLines=\count29
+\processedLines=\count30
+\commentsRemoved=\count31
+\commentsPassed=\count32
+\codeLinesPassed=\count33
+\TotalprocessedLines=\count34
+\TotalcommentsRemoved=\count35
+\TotalcommentsPassed=\count36
+\TotalcodeLinesPassed=\count37
+\NumberOfFiles=\count38
+\inFile=\read1
+\inputcheck=\read2
+\@tempcnta=\count39
+\off@0=\count40
+\off@1=\count41
+\off@2=\count42
+\off@3=\count43
+\off@4=\count44
+\off@5=\count45
+\off@6=\count46
+\off@7=\count47
+\off@8=\count48
+\off@9=\count49
+\off@10=\count50
+\off@11=\count51
+\off@12=\count52
+\off@13=\count53
+\off@14=\count54
+\off@15=\count55
+\@temptokena=\toks13
+\@maxfiles=\count56
+\@maxoutfiles=\count57
+
+Utility: `docstrip' 2.5e <2014/09/29>
+English documentation    <2017/03/13>
+
+**********************************************************
+* This program converts documented macro-files into fast *
+* loadable files by stripping off (nearly) all comments! *
+**********************************************************
+
+********************************************************
+* No Configuration file found, using default settings. *
+********************************************************
+
+)
+File mcmthesis.cls already exists somewhere on the system.
+Overwrite it if necessary? [y/n]
+\answer=y
+
+Generating file(s) mcmthesis.cls mcmthesis-demo.tex README.tex LICENSE.tex 
+\openout0 = `mcmthesis.cls'.
+
+\openout1 = `mcmthesis-demo.tex'.
+
+\openout2 = `README.tex'.
+
+\openout3 = `LICENSE.tex'.
+
+
+Processing file mcmthesis.dtx (class) -> mcmthesis.cls
+                              (demo) -> mcmthesis-demo.tex
+                              (readme) -> README.tex
+                              (license) -> LICENSE.tex
+File mcmthesis.dtx ended by \endinput.
+Lines  processed: 1198
+Comments removed: 546
+Comments  passed: 0
+Codelines passed: 617
+
+*************************************************************
+*                                                           *
+* To finish the installation you have to                    *
+*                                                           *
+* produce the user manual run the file mcmthesis.dtx        *
+* through XeLaTeX,                                          *
+*                                                           *
+* produce the demo file run the file mcmthesis-demo.tex     *
+* through XeLaTeX,                                          *
+*                                                           *
+* move the following file into a directory searched         *
+*    by TeX:                                                *
+*                                                           *
+*   mcmthesis.cls to TEXMF/tex/latex/mcmthesis/,            *
+*   mcmthesis.dtx to TEXMF/source/latex/mcmthesis/,         *
+*   other files   to TEXMF/doc/latex/mcmthesis/,            *
+*                                                           *
+* and then run texhash.                                     *
+*                                                           *
+* Happy TeXing!                                             *
+*************************************************************
+ )
+No pages of output.
