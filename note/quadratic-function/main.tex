@@ -1,0 +1,331 @@
+
+\documentclass[final]{beamer}
+
+\usepackage[scale=1.24]{beamerposter} % Use the beamerposter package for laying out the poster
+
+
+% Chinese Support，If you don't need it, just comment it.
+\usepackage{ctex}
+\setCJKmainfont{STSong}
+
+\usetheme{confposter} % Use the confposter theme supplied with this template
+
+\setbeamercolor{block title}{fg=ngreen,bg=white} % Colors of the block titles
+\setbeamercolor{block body}{fg=black,bg=white} % Colors of the body of blocks
+\setbeamercolor{block alerted title}{fg=white,bg=dblue!70} % Colors of the highlighted block titles
+\setbeamercolor{block alerted body}{fg=black,bg=dblue!10} % Colors of the body of highlighted blocks
+% Many more colors are available for use in beamerthemeconfposter.sty
+
+%-----------------------------------------------------------
+% Define the column widths and overall poster size
+% To set effective sepwid, onecolwid and twocolwid values, first choose how many columns you want and how much separation you want between columns
+% In this template, the separation width chosen is 0.024 of the paper width and a 4-column layout
+% onecolwid should therefore be (1-(# of columns+1)*sepwid)/# of columns e.g. (1-(4+1)*0.024)/4 = 0.22
+% Set twocolwid to be (2*onecolwid)+sepwid = 0.464
+% Set threecolwid to be (3*onecolwid)+2*sepwid = 0.708
+
+\newlength{\sepwid}
+\newlength{\onecolwid}
+\newlength{\twocolwid}
+\newlength{\threecolwid}
+\setlength{\paperwidth}{48in} % A0 width: 46.8in
+\setlength{\paperheight}{36in} % A0 height: 33.1in
+\setlength{\sepwid}{0.024\paperwidth} % Separation width (white space) between columns
+\setlength{\onecolwid}{0.22\paperwidth} % Width of one column
+\setlength{\twocolwid}{0.464\paperwidth} % Width of two columns
+\setlength{\threecolwid}{0.708\paperwidth} % Width of three columns
+\setlength{\topmargin}{-0.5in} % Reduce the top margin size
+%-----------------------------------------------------------
+
+\usepackage{graphicx}  % Required for including images
+
+\usepackage{booktabs} % Top and bottom rules for tables
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION 
+%----------------------------------------------------------------------------------------
+
+\title{Quadratic Function} % Poster title
+
+\author{matematika.pl} % Author(s)
+
+\institute{2015} % Institution(s)
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\addtobeamertemplate{block end}{}{\vspace*{2ex}} % White space under blocks
+\addtobeamertemplate{block alerted end}{}{\vspace*{2ex}} % White space under highlighted (alert) blocks
+
+\setlength{\belowcaptionskip}{2ex} % White space under figures
+\setlength\belowdisplayshortskip{2ex} % White space under equations
+
+\begin{frame}[t] % The whole poster is enclosed in one beamer frame
+
+\begin{columns}[t] % The whole poster consists of three major columns, the second of which is split into two columns twice - the [t] option aligns each column's content to the top
+
+\begin{column}{\sepwid}\end{column} % Empty spacer column
+
+\begin{column}{\onecolwid} % The first column
+
+%----------------------------------------------------------------------------------------
+%	OBJECTIVES
+%----------------------------------------------------------------------------------------
+
+\begin{alertblock}{Objectives}
+Objectives for today:
+\begin{itemize}
+\item 介绍一下你自己。
+\item Introducing specific vocabulary.
+\item Quick revision of quadratic function.
+\item Factorising Quadratics.
+\item Proving Vieta's formulas.
+\item Carrying out gained knowledge by working out some word problems.
+\end{itemize}
+
+\end{alertblock}
+
+%----------------------------------------------------------------------------------------
+%	QUICK REVISION
+%----------------------------------------------------------------------------------------
+
+\begin{block}{Quick Revision}
+
+\textbf{Forms of Quadratic Function}
+\begin{itemize}
+\item $f(x) = ax^2+bx+c$ is called the \textbf{standard form}.
+\item $f(x) = a(x-x_1)(x-x_2)$ is called the \textbf{factored form}, where $x_1$ and $x_2$ are the roots of the quadratic function.
+\item $f(x) = a(x-h)^2+k$ is called the \textbf{vertex form}.
+\end{itemize}
+
+\textbf{Delta $\Delta$}\\*
+$\Delta$ determines tells us how many solutions quadratic equation have:
+$$\text{number of solutions}=
+\begin{cases}
+2 &\text{when } \Delta > 0\\
+1 &\text{when } \Delta = 0\\
+0 &\text{when } \Delta < 0
+\end{cases}
+$$
+
+
+\textbf{The Quadratic Formula}
+$$x = \frac{-b\pm \sqrt{\Delta}}{2a}$$
+
+\textbf{Graph of Quadratic Function}
+
+\end{block}
+
+%------------------------------------------------
+
+\begin{figure}
+\includegraphics[width=0.8\linewidth]{1.jpg}
+\caption{Graph of $f(x)=ax^2|_{\{0.1, 0.3, 1.0, 3.0\}}$}
+\end{figure}
+
+%----------------------------------------------------------------------------------------
+
+\end{column} % End of the first column
+
+\begin{column}{\sepwid}\end{column} % Empty spacer column
+
+\begin{column}{\twocolwid} % Begin a column which is two columns wide (column 2)
+
+\begin{columns}[t,totalwidth=\twocolwid] % Split up the two columns wide column
+
+\begin{column}{\onecolwid}\vspace{-.6in} % The first column within column 2 (column 2.1)
+
+%----------------------------------------------------------------------------------------
+%	MATERIALS
+%----------------------------------------------------------------------------------------
+
+\begin{block}{Factorising a Quadratic}
+
+Factorising a quadratic means putting it into two brackets, and is useful if you're trying to draw a graph of a quadratic solve a quadratic equation. It's pretty easy if $a=1$ (in $ax^2+bx+c$ form), but can be a real pain otherwise.
+\newline
+\newline
+In order to factorise a quadratic you should follow steps outlined below:
+
+\begin{enumerate}
+\item Rearrange the equation into the standard $ax^2+bx+c$ form.
+\item Write down two brackets: $(x\ \ \ )(x\ \ \ )$
+\item Find two numbers that multiply to give 'c' and add or subtract to give 'b' (ignoring signs).
+\item Put the numbers in brackets and choose their signs.
+\end{enumerate}
+
+\end{block}
+
+%----------------------------------------------------------------------------------------
+
+\end{column} % End of column 2.1
+
+\begin{column}{\onecolwid}\vspace{-.6in} % The second column within column 2 (column 2.2)
+
+%----------------------------------------------------------------------------------------
+%	P
+%----------------------------------------------------------------------------------------
+
+\begin{block}{Factorising- Tasks}
+1. Factorise $x^2-x-12$.
+\[\]
+\[\]
+\[\]
+\[\]
+2. Solve $x^2-8=2x$ by factorising.
+
+\end{block}
+
+%----------------------------------------------------------------------------------------
+
+\end{column} % End of column 2.2
+
+\end{columns} % End of the split of column 2 - any content after this will now take up 2 columns width
+
+%----------------------------------------------------------------------------------------
+%	IMPORTANT To REMEMBER
+%----------------------------------------------------------------------------------------
+
+\begin{alertblock}{Myth of Delta $\Delta$}
+
+It's commonly believed that in order to work out roots of a quadratic function you must count $\Delta$ and use other previously established formulas. However this is untrue since factorising in many cases is as good or even better than simply counting $\Delta$.
+
+\end{alertblock} 
+
+%----------------------------------------------------------------------------------------
+
+\begin{columns}[t,totalwidth=\twocolwid] % Split up the two columns wide column again
+
+\begin{column}{\onecolwid} % The first column within column 2 (column 2.1)
+
+%----------------------------------------------------------------------------------------
+%	EXAMPLE OF FACTORISATION
+%----------------------------------------------------------------------------------------
+
+\begin{block}{Example of Factorisation}
+Solve $x^2+4x-21=0$ by factorising.
+
+$$x^2+4x-21=(x\ \ \ \ \ )(x\ \ \ \ \ )$$
+$1$ and $21$ multiply to give $21$ - and add or subtract to give $22$ and $20$.\\*
+$3$ and $7$ multiply to give $21$ - and add or subtract to give $10$ and \textbf{$4$}.
+
+$$x^2+4x+21 = (x+7)(x-3)$$
+
+And solving the equation:
+$$(x+7)(x-3)=0$$
+we get
+$$x=-7,\ \ \ x=3$$
+
+\end{block}
+
+%----------------------------------------------------------------------------------------
+
+\end{column} % End of column 2.1
+
+\begin{column}{\onecolwid} % The second column within column 2 (column 2.2)
+
+%----------------------------------------------------------------------------------------
+%	PROOF OF VIETA'S FORMULAS
+%----------------------------------------------------------------------------------------
+
+\begin{block}{ Proof of Vieta's Formulas}
+Let's prove that:
+$$x_1 + x_2 = \frac{-b}{a}$$
+When $\Delta$ is positive we have two roots:
+$$x_1 = \frac{-b-\sqrt{\Delta}}{2a},\ \ \ x_2 = \frac{-b+\sqrt{\Delta}}{2a}$$
+
+Substituting for $x_1$ and $x_2$ respectively, we receive:
+					
+$$x_1 + x_2 = \frac{-b-\sqrt{\Delta}}{2a} + \frac{-b+\sqrt{\Delta}}{2a} =$$
+$$ = \frac{(-b-\sqrt{\Delta}) + (-b+\sqrt{\Delta})}{2a} = \frac{-2b}{2a} = \frac{-b}{a}$$
+                    
+The same we could do with another pattern, which state that $x_1 x_2 = \frac{c}{a}$, but proving this is going to be your task in next section.
+
+\end{block}
+
+%----------------------------------------------------------------------------------------
+
+\end{column} % End of column 2.2
+
+\end{columns} % End of the split of column 2
+
+\end{column} % End of the second column
+
+\begin{column}{\sepwid}\end{column} % Empty spacer column
+
+\begin{column}{\onecolwid} % The third column
+
+%----------------------------------------------------------------------------------------
+%	CONCLUSION
+%----------------------------------------------------------------------------------------
+
+\begin{block}{Vieta's Formulas- Task}
+1. Prove that $$x_1x_2 = \frac{c}{a}$$
+\[\]
+\[\]
+\[\]
+\[\]
+\[\]
+
+\end{block}
+
+
+%----------------------------------------------------------------------------------------
+%	ACKNOWLEDGEMENTS
+%----------------------------------------------------------------------------------------
+
+\setbeamercolor{block title}{fg=red,bg=white} % Change the block title color
+
+\begin{block}{Glossary}
+
+\begin{table}
+\vspace{2ex}
+\begin{tabular}{l l l l}
+\toprule
+\textbf{verb} & \textbf{noun} & \textbf{meaning}\\
+\midrule
+add & addition & $+$ \\
+subtract & subtraction & $-$ \\
+multiply & multiplication & $\cdot$ \\
+divide & division & $\div$ \\
+solve & solution & getting answer \\
+substitute & substitution & $t=x^2$ \\
+
+
+
+\bottomrule
+\end{tabular}
+\caption{Word Formation}
+\end{table}
+
+
+\end{block}
+
+\setbeamercolor{block alerted title}{fg=black,bg=norange} % Change the alert block title colors
+\setbeamercolor{block alerted body}{fg=black,bg=white} % Change the alert block body colors
+
+\begin{alertblock}{Some Necessary and Useful Vocabulary}
+
+\begin{itemize}
+\item (n.) sign $\rightarrow$ $+$ or $-$
+\item (n.) equation $\rightarrow something = 0$ 
+\item (n.) factor $\rightarrow$ two multiplied factors give result
+\item (v.) factorise $\rightarrow$ putting into brackets
+\item (n.) coefficient $\rightarrow$ a constant number i.e. $a$, $b$, $c$ in a pattern $ax^2+bx+c$
+\item (n.) quadratic function $\rightarrow$ $f(x) = ax^2+bx+c$
+\item (n.) root $\rightarrow$ $\sqrt{sth}$ or solution of quadratic equation
+\item (n.) formula $=$ pattern
+\end{itemize}
+
+\end{alertblock}
+
+
+%----------------------------------------------------------------------------------------
+
+\end{column} % End of the third column
+
+\end{columns} % End of all the columns in the poster
+
+\end{frame} % End of the enclosing frame
+
+\end{document}
